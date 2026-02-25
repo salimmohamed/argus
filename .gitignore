@@ -26,3 +26,7 @@ Thumbs.db
 *.tsbuildinfo
 next-env.d.ts
 .env*.local
+
+# Marketing / content creation (local only)
+content/
+remotion/
