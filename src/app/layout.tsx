@@ -37,7 +37,7 @@ export default function RootLayout({
 
         {/* GitHub link */}
         <a
-          href="https://github.com/salimmohamed/colorstackwinterhack2025-argus"
+          href="https://github.com/salimmohamed/argus"
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 text-[var(--text-muted)] hover:text-[var(--accent)] transition-colors"
