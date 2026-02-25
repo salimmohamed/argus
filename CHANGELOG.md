@@ -7,6 +7,59 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2025-02-24
+
+### Added
+
+- **AI Agent**
+  - Autonomous insider trading detection using Claude via AWS Bedrock
+  - Agentic loop with 6 investigation tools (up to 50 iterations per case)
+  - Sliding window context optimization and compressed tool responses
+  - Server-side guardrails on the flagging tool (trade count, profit, confidence gates)
+
+- **Autonomous Operation**
+  - Convex cron jobs for market sync, rules detection, and AI analysis
+  - Activity feed with automatic cleanup
+  - Alert deduplication with 7-day window and severity escalation
+  - Account and alert management utilities
+
+- **Detection**
+  - Rules-based detection with granular risk scoring
+  - Expanded market coverage and suspects sorting
+
+- **UI**
+  - Suspects page with expandable evidence cards
+  - Markets page header styling consistency
+  - Accessibility improvements (focus states, ARIA labels)
+
+- **Project**
+  - MIT License
+  - Contributing guidelines, security policy, and community files
+  - GitHub issue and PR templates
+  - `.env.example` for easy setup
+  - Organized documentation with architecture diagrams
+
+### Fixed
+
+- Event slugs now resolve to condition IDs for accurate trade fetching
+- Alert deduplication prevents duplicate flags within 7-day windows
+- Convex functions include admin secret checks, type safety, and null handling
+- Agent trigger endpoint requires authentication
+- Next.js updated to 15.5.9 for security patch
+- Removed redundant ARIA labels
+
+### Changed
+
+- Repository renamed from `colorstackwinterhack2025-argus` to `argus`
+- Package renamed from `poly` to `argus`
+- README rewritten for production open source use
+- Images organized into `docs/images/`
+
+### Removed
+
+- Hackathon submission files (presentation video, slides, screenshots)
+- Convex boilerplate README
+
 ## [0.1.0] - 2025-01-09
 
 ### Added
@@ -29,7 +82,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Documentation**
   - Comprehensive README with setup instructions
-  - Real-world insider trading case studies (Maduro, AlphaRaccoon, ricosuave666)
 
 ### Fixed
 
@@ -43,10 +95,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## Version History
-
-- **0.1.0** - Initial public release with core market monitoring functionality
-- **0.0.1** - Internal development version
-
-[Unreleased]: https://github.com/salimmohamed/colorstackwinterhack2025-argus/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/salimmohamed/colorstackwinterhack2025-argus/releases/tag/v0.1.0
+[Unreleased]: https://github.com/salimmohamed/argus/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/salimmohamed/argus/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/salimmohamed/argus/releases/tag/v0.1.0
